@@ -9,7 +9,7 @@ for i in range(3):
 	print(f"{i+1}. {names[i]}")
 
 while True:
-	choice = input("Enter which charity you want to donate to (1, 2, 3): ")
+	choice = input("Enter which charity you want to donate to (1, 2, 3) or -1 to end: ")
 	while True:
 		try:
 			choice = int(choice)
@@ -18,7 +18,7 @@ while True:
 			print("[INVALID] Please enter a valid choice.")
 		except:
 			print("[INVALID] Please enter a valid choice.")
-		choice = input("Enter which charity you want to donate to (1, 2, 3): ")
+		choice = input("Enter which charity you want to donate to (1, 2, 3) or -1 to end: ")
 	if choice == -1:
 		break
 	bill = input("Enter customer's bill: ")
